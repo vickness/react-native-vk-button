@@ -50,13 +50,13 @@ class Button extends React.PureComponent {
         //返回组件
         switch (imagePosition) {
             case 'left':
-                return <TouchableOpacity disabled={!onPress} style={StyleSheet.flatten([styles.row, viewStyle])}>{image}{spaceView}{text}</TouchableOpacity>;
+                return <TouchableOpacity disabled={!onPress} onPress={onPress} style={StyleSheet.flatten([styles.row, viewStyle])}>{image}{spaceView}{text}</TouchableOpacity>;
             case 'right':
-                return <TouchableOpacity disabled={!onPress} style={StyleSheet.flatten([styles.row, viewStyle])}>{text}{spaceView}{image}</TouchableOpacity>;
+                return <TouchableOpacity disabled={!onPress} onPress={onPress} style={StyleSheet.flatten([styles.row, viewStyle])}>{text}{spaceView}{image}</TouchableOpacity>;
             case 'top':
-                return <TouchableOpacity disabled={!onPress} style={StyleSheet.flatten([styles.column, viewStyle])}>{image}{spaceView}{text}</TouchableOpacity>;
+                return <TouchableOpacity disabled={!onPress} onPress={onPress} style={StyleSheet.flatten([styles.column, viewStyle])}>{image}{spaceView}{text}</TouchableOpacity>;
             case 'bottom':
-                return <TouchableOpacity disabled={!onPress} style={StyleSheet.flatten([styles.column, viewStyle])}>{text}{spaceView}{image}</TouchableOpacity>;
+                return <TouchableOpacity disabled={!onPress} onPress={onPress} style={StyleSheet.flatten([styles.column, viewStyle])}>{text}{spaceView}{image}</TouchableOpacity>;
             default :
                 return null;
         }
