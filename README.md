@@ -44,3 +44,6 @@ import Button from 'react-native-vk-button'
 <Button text={"网络图片按钮"} image={<WebImage source={""http://www.baidu.com}/>} imagePosition={'left'}/>
 ```
 
+# License
+
+MIT
