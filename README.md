@@ -3,8 +3,8 @@
 A React Native button component .
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/wiki/APSL/react-native-button/button.png" alt="Button component screenshot" width="400">
-<img src="https://raw.githubusercontent.com/wiki/APSL/react-native-button/and.png" alt="Android Button component screenshot" width="400">
+<img src="https://github.com/vickness/react-native-vk-button/blob/master/screenshot/image1.png" width="400">
+<img src="https://github.com/vickness/react-native-vk-button/blob/master/screenshot/image1.png2" width="400">
 </p>
 
 ## Install
