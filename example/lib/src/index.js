@@ -47,23 +47,19 @@ class Button extends React.PureComponent {
         //文字图片间隔
         let spaceView = (text && image) ? <View style={{height: space, width: space}}/> : null;
 
-        let contentView = null;
+        //返回组件
         switch (imagePosition) {
             case 'left':
-                contentView = <View style={StyleSheet.flatten([styles.row, viewStyle])}>{image}{spaceView}{text}</View>;
-                break;
+                return <TouchableOpacity disabled={!onPress} style={StyleSheet.flatten([styles.row, viewStyle])}>{image}{spaceView}{text}</TouchableOpacity>;
             case 'right':
-                contentView = <View style={StyleSheet.flatten([styles.row, viewStyle])}>{text}{spaceView}{image}</View>;
-                break;
+                return <TouchableOpacity disabled={!onPress} style={StyleSheet.flatten([styles.row, viewStyle])}>{text}{spaceView}{image}</TouchableOpacity>;
             case 'top':
-                contentView = <View style={StyleSheet.flatten([styles.column, viewStyle])}>{image}{spaceView}{text}</View>;
-                break;
+                return <TouchableOpacity disabled={!onPress} style={StyleSheet.flatten([styles.column, viewStyle])}>{image}{spaceView}{text}</TouchableOpacity>;
             case 'bottom':
-                contentView = <View style={StyleSheet.flatten([styles.column, viewStyle])}>{text}{spaceView}{image}</View>;
-                break;
+                return <TouchableOpacity disabled={!onPress} style={StyleSheet.flatten([styles.column, viewStyle])}>{text}{spaceView}{image}</TouchableOpacity>;
+            default :
+                return null;
         }
-
-        return <TouchableOpacity disabled={!onPress} onPress={onPress}>{contentView}</TouchableOpacity>
     }
 }
 

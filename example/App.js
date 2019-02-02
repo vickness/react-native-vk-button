@@ -127,20 +127,24 @@ export default class App extends Component<Props> {
                   />
                   <View style={{height: 10}}/>
 
-                  {/*<Button*/}
-                  {/*text={*/}
-                  {/*<View>*/}
-                  {/*<Text>{'网络图片'}</Text>*/}
-                  {/*<Text>{'加载一个网络图片组件'}</Text>*/}
-                  {/*</View>*/}
-                  {/*}*/}
-                  {/*// image={*/}
-                  {/*//     <WebImage/>*/}
-                  {/*//*/}
-                  {/*// }*/}
-                  {/*imagePosition={'left'}*/}
-                  {/*viewStyle={styles.imageBtn}*/}
-                  {/*/>*/}
+                  <View style={{width: 300, height: 60, flexDirection: 'row', justifyContent: 'space-between',backgroundColor: '#eee'}}>
+                      <Button
+                          text={"图片在左"}
+                          viewStyle={[styles.imageBtn, {flex: 1}]}
+                          //textStyle={{backgroundColor: 'yellow', fontSize: 18}}
+                          image={btnImage}
+                          imagePosition={'left'}
+                          onPress={()=>{alert("点击")}}
+                      />
+                      <Button
+                          text={"图片在左"}
+                          viewStyle={[styles.imageBtn, {flex: 1}]}
+                          //textStyle={{backgroundColor: 'yellow', fontSize: 18}}
+                          image={btnImage}
+                          imagePosition={'left'}
+                          onPress={()=>{alert("点击")}}
+                      />
+                  </View>
 
               </View>
           </ScrollView>
