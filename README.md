@@ -4,7 +4,7 @@ A React Native button component .
 
 <p align="center">
 <img src="https://github.com/vickness/react-native-vk-button/blob/master/screenshot/image1.png" width="400">
-<img src="https://github.com/vickness/react-native-vk-button/blob/master/screenshot/image1.png2" width="400">
+<img src="https://github.com/vickness/react-native-vk-button/blob/master/screenshot/image2.png" width="400">
 </p>
 
 ## Install
