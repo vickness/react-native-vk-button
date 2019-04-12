@@ -33,7 +33,7 @@ export default class App extends Component<Props> {
                   <View style={{height: 10}}/>
 
                   <StyleButton
-                      viewStyle={{width: 200}}
+                      //viewStyle={{width: 200}}
                       text={"登录按钮"}
                       type={'primary'}
                       onPress={()=>{alert("点击")}}
@@ -41,7 +41,7 @@ export default class App extends Component<Props> {
                   <View style={{height: 10}}/>
 
                   <StyleButton
-                      viewStyle={{width: 200}}
+                      //viewStyle={{width: 200}}
                       text={"注册按钮"}
                       onPress={()=>{alert("点击")}}
                   />
