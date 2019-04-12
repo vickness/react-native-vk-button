@@ -8,7 +8,7 @@
 
 import React, {Component} from 'react';
 import {StyleSheet, View, ScrollView, Text, SafeAreaView} from 'react-native';
-import Button from "./lib/src";
+import Button, {StyleButton} from "./lib/src/index";
 
 const btnImage = require("./src/icon-test.png");
 
@@ -25,33 +25,24 @@ export default class App extends Component<Props> {
                   />
                   <View style={{height: 10}}/>
 
-                  <Button
-                      text={"忘记密码?"}
-                      viewStyle={styles.bottomLineBtn}
+                  <StyleButton
+                      text={"忘记密码"}
+                      type={'line'}
                       onPress={()=>{}}
                   />
                   <View style={{height: 10}}/>
 
-                  <Button
+                  <StyleButton
+                      viewStyle={{width: 200}}
                       text={"登录按钮"}
-                      viewStyle={styles.greenBtn}
-                      //textStyle={{backgroundColor: 'yellow'}}
+                      type={'primary'}
                       onPress={()=>{alert("点击")}}
                   />
                   <View style={{height: 10}}/>
 
-                  <Button
-                      text={"登录按钮"}
-                      viewStyle={styles.greenRoundBtn}
-                      //textStyle={{backgroundColor: 'yellow', fontSize: 18}}
-                      onPress={()=>{alert("点击")}}
-                  />
-                  <View style={{height: 10}}/>
-
-                  <Button
-                      text={"登录按钮"}
-                      viewStyle={styles.borderBtn}
-                      //textStyle={{backgroundColor: 'yellow', fontSize: 18}}
+                  <StyleButton
+                      viewStyle={{width: 200}}
+                      text={"注册按钮"}
                       onPress={()=>{alert("点击")}}
                   />
                   <View style={{height: 10}}/>
