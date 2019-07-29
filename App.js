@@ -11,6 +11,7 @@ import {StyleSheet, View, ScrollView, Text, SafeAreaView} from 'react-native';
 import Button, {StyleButton} from "./lib/src/index";
 
 const btnImage = require("./src/icon-test.png");
+const BtnImage1 = require("./src/wenhao.png");
 
 type Props = {};
 export default class App extends Component<Props> {
@@ -136,6 +137,13 @@ export default class App extends Component<Props> {
                           onPress={()=>{alert("点击")}}
                       />
                   </View>
+
+                  <Button
+                      image={btnImage}
+                      text={"图"}
+                      imagePosition={'center'}
+                      onPress={()=>{alert("点击")}}
+                  />
 
               </View>
           </ScrollView>
